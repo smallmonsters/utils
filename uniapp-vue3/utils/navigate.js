@@ -1,6 +1,5 @@
-// 封装跳转
-import {routerMap} from "@/enum/routerMap";
 
+// 需要配合usePreRouter hock, 见docs/usePreRouter
 const getPre = (param) => {
   if (param.url === routerMap.userLogin) {
     const pages = getCurrentPages();
