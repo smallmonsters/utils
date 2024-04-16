@@ -1,0 +1,8 @@
+// 定义一个带有@content的占位符选择器
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // 使用@content捕获传递进来的样式
+  @content;
+}
