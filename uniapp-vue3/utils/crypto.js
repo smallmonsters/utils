@@ -1,5 +1,5 @@
 /**
- * 安装插件 https://ext.dcloud.net.cn/plugin?id=13351
+ * 安装插件 https://ext.dcloud.net.cn/plugin?id=13351 or yarn add crypto-js
  * crypto-js 一定要放在node-modules下
  * 使用DES 加密解密
  */

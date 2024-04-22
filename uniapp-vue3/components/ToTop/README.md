@@ -1,5 +1,5 @@
 # 使用
-需要结合 [useToTop](../../hock/useToTop.js)
+需要结合 [useToTop](useToTop.js)
 
 ```vue
 <!--父组件-->

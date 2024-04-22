@@ -1,6 +1,6 @@
 <template>
   <view :style="style" class="to-top-icon" @tap="emits('handleUpperBtn')" v-if="props.showUpperBtn">
-    <image src="/static/images/icon_zd.png" class="to-top"></image>
+    <image src="./icon_zd.png" class="to-top"></image>
   </view>
 </template>
 

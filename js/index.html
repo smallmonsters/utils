@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  const options = {
+    hasAll: true,
+    value: "value",
+    name: "label"
+  }
+
+  const onConvertEnum = (enumObj, option = {}) => {
+    option = Object.assign(options, option);
+    const list = Object.keys(enumObj).map(v => {
+      return {
+        [option.name]: enumObj[v].name,
+        [option.value]: enumObj[v].id
+      }
+    })
+    return option.hasAll ? [
+      {label: '全部', value: ""},
+      ...list
+    ] : list
+  }
+
+  // 根据唯一值获取枚举项
+   const getEnumItemById = (enumObj, id) => enumObj[Object.keys(enumObj).find(v => enumObj[v].id == id)]
+
+
+  const timeEnum = {
+    day: {
+      id: 1,
+      name: "今日",
+    },
+    week: {
+      id: 2,
+      name: "近7天",
+    },
+    month: {
+      id: 3,
+      name: "本月",
+    }
+  }
+  const list = onConvertEnum(timeEnum)
+  getEnumItemById(timeEnum,3)
+  console.log(getEnumItemById(timeEnum,32))
+</script>
+</html>
