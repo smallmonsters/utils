@@ -33,12 +33,12 @@
 
 ## js
 
-#### [enum](./js/util/enum.md): 定义枚举，转换数组
+#### [enum](js/src/enum.md): 定义枚举，转换数组
 
-#### [helper](./js/util/helper.js)
+#### [helper](js/src/helper.js)
 
 一些类型的判断
 
-#### [是否是浏览器](./js/helper/isBrowser.js)
+#### [是否是浏览器](js/src/helper/isBrowser.js)
 
-#### [获取当前 URL 二级域名](./js/helper/getSecondDomain.js)
+#### [获取当前 URL 二级域名](js/src/helper/getSecondDomain.js)

@@ -1,4 +1,4 @@
-import {moneyFormat} from "../../util/moneyFormat";
+import {moneyFormat} from "../src/moneyFormat";
 
 describe('moneyFormat金钱格式化', () => {
   test('用例: 000', () => {
@@ -21,5 +21,8 @@ describe('moneyFormat金钱格式化', () => {
   })
   test('用例: 1.112.222', () => {
     expect(moneyFormat("1.112.222")).toBe("1.11")
+  })
+  test('用例:3-', () => {
+    expect(moneyFormat("3-",0)).toBe("3")
   })
 })
